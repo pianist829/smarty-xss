@@ -1,0 +1,4 @@
+smarty-xss
+==========
+
+smarty-xss
