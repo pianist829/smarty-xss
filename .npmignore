@@ -1,11 +1,8 @@
 .idea/
 .settings/
 .project/
-/lib/ext/remote
-/lib/ext/framework
-fis-ext
+node_modules/
 /.tmp
-/node_modules/.bin
 
 .DS_Store
 
@@ -13,4 +10,6 @@ fis-ext
 *.bak
 *.tmp
 ~*
+.*
+
 upload.py
