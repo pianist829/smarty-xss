@@ -2,7 +2,7 @@
     "name": "smarty-xss",
     "description": "XSS repair or check for the smarty template.",
     "main": "lib/xss.js",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "author": {
         "name": "FIS Team",
         "email": "fis@baidu.com"
@@ -12,6 +12,9 @@
     },
     "homepage": "http://fis.baidu.com/",
     "engines": {
-    "node": ">= 0.8.0"
+        "node": ">= 0.8.0"
+    },
+    "dependencies": {
+        "chai": "~1.4.2"
     }
 }

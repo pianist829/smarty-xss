@@ -17,7 +17,7 @@
 ### 载入模块
 
 ```javascript
-var xss = require('smarty-xssrepair');
+var xss = require('smarty-xss');
 ```
 
 ### 设置配置参数
