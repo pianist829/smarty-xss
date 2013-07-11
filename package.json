@@ -13,8 +13,5 @@
     "homepage": "http://fis.baidu.com/",
     "engines": {
         "node": ">= 0.8.0"
-    },
-    "dependencies": {
-        "chai": "~1.4.2"
     }
 }
