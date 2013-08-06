@@ -11,6 +11,8 @@
     <div onclick="testTitle('{#$title|f_escape_event#}')"></div>
     <a href="http://hi.baidu.com/sys/checkuser/{#$spUserInfo.name|f_escape_path#}/3"></a>
     <img src="http://hi.baidu.com/sys/checkuser/{#$spUserInfo.name|f_escape_path#}/3" alt="xssrepire"/>
+    <span>服务:&nbsp; {#$widget_data.detail_info.service_rating|f_escape_xml#}</span>&nbsp;
+    <span>服务:&nbsp; {#$widget_data.detail_info.service_rating|f_escape_xml#}</span>&nbsp;
     <div class='content-album-info'>
         <a class='content-album-name yahei'
         href='{#if $item.album_picture_total > 0#}/picture/album/list/{#$item.album_sign|f_escape_path#}{#else#}/picture/page/upload?album_sign={#$item.album_sign|f_escape_path#}{#/if#}'>{#$item.album_name|f_escape_xml#}</a>
