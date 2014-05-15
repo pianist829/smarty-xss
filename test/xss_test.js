@@ -101,3 +101,19 @@ describe('xss.parse(option)', function(){
         expect(result).to.equal(expectContent);
     });
 });
+
+describe('xss.parse(option)', function(){
+    it('escapeMap', function(){
+        escapeMap.js = 'fis_js_escape';
+        escapeMap.html ='fis_html_escape';
+        escapeMap.event ='fis_event_escape';
+        escapeMap.path='f_escape_path';
+        option['escapeMap'] = escapeMap;
+        option.leftDelimiter = '{';
+        option.rightDelimiter = '}';
+        xss.config(option);
+        var result = xss.repair(fs.readFileSync('./test/source/escape_default_delimiter.tpl').toString());
+        var expectContent = fs.readFileSync('./test/expect/escape_default_delimiter.tpl') + '';
+        expect(result).to.equal(expectContent);
+    });
+});
