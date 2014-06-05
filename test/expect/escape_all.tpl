@@ -14,6 +14,9 @@
     <span>服务:&nbsp; {#$widget_data.detail_info.service_rating|f_escape_xml#}</span>&nbsp;
     <span>服务:&nbsp; {#$widget_data.detail_info.service_rating|f_escape_xml#}</span>&nbsp;
     <div class='content-album-info'>
+        {#$test|f_escape_xml#}
+        {#$test/10#}
+        {#$test=0#}
         <a class='content-album-name yahei'
         href='{#if $item.album_picture_total > 0#}/picture/album/list/{#$item.album_sign|f_escape_path#}{#else#}/picture/page/upload?album_sign={#$item.album_sign|f_escape_path#}{#/if#}'>{#$item.album_name|f_escape_xml#}</a>
         <span class='content-album-date'>
